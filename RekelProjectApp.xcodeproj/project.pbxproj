@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */; };
+		822F22601B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 822F225E1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld */; };
+		822F22621B4C8D1D00946EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22611B4C8D1D00946EC1 /* ViewController.swift */; };
+		822F22651B4C8D1D00946EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822F22631B4C8D1D00946EC1 /* Main.storyboard */; };
+		822F22671B4C8D1D00946EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822F22661B4C8D1D00946EC1 /* Images.xcassets */; };
+		822F226A1B4C8D1D00946EC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */; };
+		822F22761B4C8D1D00946EC1 /* RekelProjectAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22751B4C8D1D00946EC1 /* RekelProjectAppTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		822F22701B4C8D1D00946EC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 822F224F1B4C8D1D00946EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 822F22561B4C8D1D00946EC1;
+			remoteInfo = RekelProjectApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		822F22571B4C8D1D00946EC1 /* RekelProjectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RekelProjectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		822F225B1B4C8D1D00946EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		822F225F1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RekelProjectApp.xcdatamodel; sourceTree = "<group>"; };
+		822F22611B4C8D1D00946EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		822F22641B4C8D1D00946EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		822F22661B4C8D1D00946EC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		822F22691B4C8D1D00946EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		822F226F1B4C8D1D00946EC1 /* RekelProjectAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RekelProjectAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		822F22741B4C8D1D00946EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822F22751B4C8D1D00946EC1 /* RekelProjectAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RekelProjectAppTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		822F22541B4C8D1D00946EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822F226C1B4C8D1D00946EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		822F224E1B4C8D1D00946EC1 = {
+			isa = PBXGroup;
+			children = (
+				822F22591B4C8D1D00946EC1 /* RekelProjectApp */,
+				822F22721B4C8D1D00946EC1 /* RekelProjectAppTests */,
+				822F22581B4C8D1D00946EC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		822F22581B4C8D1D00946EC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				822F22571B4C8D1D00946EC1 /* RekelProjectApp.app */,
+				822F226F1B4C8D1D00946EC1 /* RekelProjectAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		822F22591B4C8D1D00946EC1 /* RekelProjectApp */ = {
+			isa = PBXGroup;
+			children = (
+				822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */,
+				822F22611B4C8D1D00946EC1 /* ViewController.swift */,
+				822F22631B4C8D1D00946EC1 /* Main.storyboard */,
+				822F22661B4C8D1D00946EC1 /* Images.xcassets */,
+				822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */,
+				822F225E1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld */,
+				822F225A1B4C8D1D00946EC1 /* Supporting Files */,
+			);
+			path = RekelProjectApp;
+			sourceTree = "<group>";
+		};
+		822F225A1B4C8D1D00946EC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				822F225B1B4C8D1D00946EC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		822F22721B4C8D1D00946EC1 /* RekelProjectAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				822F22751B4C8D1D00946EC1 /* RekelProjectAppTests.swift */,
+				822F22731B4C8D1D00946EC1 /* Supporting Files */,
+			);
+			path = RekelProjectAppTests;
+			sourceTree = "<group>";
+		};
+		822F22731B4C8D1D00946EC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				822F22741B4C8D1D00946EC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		822F22561B4C8D1D00946EC1 /* RekelProjectApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 822F22791B4C8D1D00946EC1 /* Build configuration list for PBXNativeTarget "RekelProjectApp" */;
+			buildPhases = (
+				822F22531B4C8D1D00946EC1 /* Sources */,
+				822F22541B4C8D1D00946EC1 /* Frameworks */,
+				822F22551B4C8D1D00946EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RekelProjectApp;
+			productName = RekelProjectApp;
+			productReference = 822F22571B4C8D1D00946EC1 /* RekelProjectApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		822F226E1B4C8D1D00946EC1 /* RekelProjectAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 822F227C1B4C8D1D00946EC1 /* Build configuration list for PBXNativeTarget "RekelProjectAppTests" */;
+			buildPhases = (
+				822F226B1B4C8D1D00946EC1 /* Sources */,
+				822F226C1B4C8D1D00946EC1 /* Frameworks */,
+				822F226D1B4C8D1D00946EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				822F22711B4C8D1D00946EC1 /* PBXTargetDependency */,
+			);
+			name = RekelProjectAppTests;
+			productName = RekelProjectAppTests;
+			productReference = 822F226F1B4C8D1D00946EC1 /* RekelProjectAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		822F224F1B4C8D1D00946EC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = rekel;
+				TargetAttributes = {
+					822F22561B4C8D1D00946EC1 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					822F226E1B4C8D1D00946EC1 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 822F22561B4C8D1D00946EC1;
+					};
+				};
+			};
+			buildConfigurationList = 822F22521B4C8D1D00946EC1 /* Build configuration list for PBXProject "RekelProjectApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 822F224E1B4C8D1D00946EC1;
+			productRefGroup = 822F22581B4C8D1D00946EC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				822F22561B4C8D1D00946EC1 /* RekelProjectApp */,
+				822F226E1B4C8D1D00946EC1 /* RekelProjectAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		822F22551B4C8D1D00946EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822F22651B4C8D1D00946EC1 /* Main.storyboard in Resources */,
+				822F226A1B4C8D1D00946EC1 /* LaunchScreen.xib in Resources */,
+				822F22671B4C8D1D00946EC1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822F226D1B4C8D1D00946EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		822F22531B4C8D1D00946EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822F22621B4C8D1D00946EC1 /* ViewController.swift in Sources */,
+				822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */,
+				822F22601B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822F226B1B4C8D1D00946EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822F22761B4C8D1D00946EC1 /* RekelProjectAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		822F22711B4C8D1D00946EC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 822F22561B4C8D1D00946EC1 /* RekelProjectApp */;
+			targetProxy = 822F22701B4C8D1D00946EC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		822F22631B4C8D1D00946EC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822F22641B4C8D1D00946EC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822F22691B4C8D1D00946EC1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		822F22771B4C8D1D00946EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		822F22781B4C8D1D00946EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		822F227A1B4C8D1D00946EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RekelProjectApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		822F227B1B4C8D1D00946EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RekelProjectApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		822F227D1B4C8D1D00946EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RekelProjectAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RekelProjectApp.app/RekelProjectApp";
+			};
+			name = Debug;
+		};
+		822F227E1B4C8D1D00946EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RekelProjectAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RekelProjectApp.app/RekelProjectApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		822F22521B4C8D1D00946EC1 /* Build configuration list for PBXProject "RekelProjectApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822F22771B4C8D1D00946EC1 /* Debug */,
+				822F22781B4C8D1D00946EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		822F22791B4C8D1D00946EC1 /* Build configuration list for PBXNativeTarget "RekelProjectApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822F227A1B4C8D1D00946EC1 /* Debug */,
+				822F227B1B4C8D1D00946EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		822F227C1B4C8D1D00946EC1 /* Build configuration list for PBXNativeTarget "RekelProjectAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822F227D1B4C8D1D00946EC1 /* Debug */,
+				822F227E1B4C8D1D00946EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		822F225E1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				822F225F1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodel */,
+			);
+			currentVersion = 822F225F1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodel */;
+			path = RekelProjectApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 822F224F1B4C8D1D00946EC1 /* Project object */;
+}
