@@ -36,6 +36,8 @@
 		822F22AA1B4E59D100946EC1 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */; };
 		822F22AE1B4EC1B300946EC1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22AD1B4EC1B300946EC1 /* TableViewController.swift */; };
 		822F22B01B4EC3A600946EC1 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */; };
+		822F22B21B4ECCCF00946EC1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822F22B11B4ECCCF00946EC1 /* FBSDKCoreKit.framework */; };
+		822F22B41B4ECE0C00946EC1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822F22B31B4ECE0C00946EC1 /* FBSDKLoginKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		822F22AD1B4EC1B300946EC1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		822F22B11B4ECCCF00946EC1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		822F22B31B4ECE0C00946EC1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,13 @@
 				822F228E1B4C8DF000946EC1 /* Security.framework in Frameworks */,
 				822F229E1B4C8E2A00946EC1 /* ParseCrashReporting.framework in Frameworks */,
 				822F228C1B4C8DE600946EC1 /* QuartzCore.framework in Frameworks */,
+				822F22B21B4ECCCF00946EC1 /* FBSDKCoreKit.framework in Frameworks */,
 				822F229D1B4C8E2A00946EC1 /* Parse.framework in Frameworks */,
 				822F229F1B4C8E2A00946EC1 /* ParseFacebookUtils.framework in Frameworks */,
 				822F22A11B4C8E2A00946EC1 /* ParseUI.framework in Frameworks */,
 				822F228A1B4C8DDC00946EC1 /* MobileCoreServices.framework in Frameworks */,
 				822F22A01B4C8E2A00946EC1 /* ParseFacebookUtilsV4.framework in Frameworks */,
+				822F22B41B4ECE0C00946EC1 /* FBSDKLoginKit.framework in Frameworks */,
 				822F22881B4C8DD100946EC1 /* libz.dylib in Frameworks */,
 				822F22861B4C8DC600946EC1 /* CoreLocation.framework in Frameworks */,
 				822F22841B4C8DBB00946EC1 /* CoreGraphics.framework in Frameworks */,
@@ -125,6 +131,8 @@
 			children = (
 				822F22951B4C8E2A00946EC1 /* parse-lib */,
 				822F22931B4C8E0E00946EC1 /* libsqlite3.dylib */,
+				822F22B31B4ECE0C00946EC1 /* FBSDKLoginKit.framework */,
+				822F22B11B4ECCCF00946EC1 /* FBSDKCoreKit.framework */,
 				822F22911B4C8E0400946EC1 /* SystemConfiguration.framework */,
 				822F228F1B4C8DFA00946EC1 /* StoreKit.framework */,
 				822F228D1B4C8DF000946EC1 /* Security.framework */,
@@ -448,6 +456,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-lib",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RekelProjectApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -465,6 +474,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-lib",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = RekelProjectApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
