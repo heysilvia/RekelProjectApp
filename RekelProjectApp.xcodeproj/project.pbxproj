@@ -34,6 +34,8 @@
 		822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A51B4C900800946EC1 /* SignUpViewController.swift */; };
 		822F22A81B4D3E7700946EC1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A71B4D3E7700946EC1 /* SignInViewController.swift */; };
 		822F22AA1B4E59D100946EC1 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */; };
+		822F22AE1B4EC1B300946EC1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22AD1B4EC1B300946EC1 /* TableViewController.swift */; };
+		822F22B01B4EC3A600946EC1 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		822F22A51B4C900800946EC1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		822F22A71B4D3E7700946EC1 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		822F22AD1B4EC1B300946EC1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,16 +154,18 @@
 			isa = PBXGroup;
 			children = (
 				822F22A51B4C900800946EC1 /* SignUpViewController.swift */,
+				822F22AD1B4EC1B300946EC1 /* TableViewController.swift */,
 				822F22A21B4C8E4700946EC1 /* RekelProjectApp-Bridging-Header.h */,
 				822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */,
 				822F22611B4C8D1D00946EC1 /* ViewController.swift */,
 				822F22631B4C8D1D00946EC1 /* Main.storyboard */,
+				822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */,
 				822F22A71B4D3E7700946EC1 /* SignInViewController.swift */,
+				822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */,
 				822F22661B4C8D1D00946EC1 /* Images.xcassets */,
 				822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */,
 				822F225E1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld */,
 				822F225A1B4C8D1D00946EC1 /* Supporting Files */,
-				822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */,
 			);
 			path = RekelProjectApp;
 			sourceTree = "<group>";
@@ -303,6 +309,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				822F22621B4C8D1D00946EC1 /* ViewController.swift in Sources */,
+				822F22AE1B4EC1B300946EC1 /* TableViewController.swift in Sources */,
+				822F22B01B4EC3A600946EC1 /* ItemsTableViewController.swift in Sources */,
 				822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */,
 				822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */,
 				822F22A81B4D3E7700946EC1 /* SignInViewController.swift in Sources */,
