@@ -115,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199.5" y="289"/>
+            <point key="canvasLocation" x="-136.5" y="15"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="9GE-Ji-ziz">
@@ -203,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smO-Sm-cGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.5" y="1056"/>
+            <point key="canvasLocation" x="-88.5" y="716"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Azc-0c-bE9">
@@ -233,7 +233,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hn9-Re-vQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.5" y="364"/>
+            <point key="canvasLocation" x="1377" y="356"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kS4-21-OCc">
@@ -253,10 +253,10 @@
             </objects>
             <point key="canvasLocation" x="2586" y="364"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile Edit View Controller-->
         <scene sceneID="335-Y2-FO8">
             <objects>
-                <viewController id="vpk-Po-awL" sceneMemberID="viewController">
+                <viewController id="vpk-Po-awL" customClass="ProfileEditViewController" customModule="RekelProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eWK-aZ-Chb"/>
                         <viewControllerLayoutGuide type="bottom" id="6Za-AX-yXp"/>
@@ -274,22 +274,68 @@
                                     <rect key="frame" x="162" y="53" width="87" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeg-GK-cDb">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="45" y="111" width="81" height="21"/>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="full name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VaU-tS-IKI">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="45" y="140" width="75" height="21"/>
+                                    <rect key="frame" x="57" y="209" width="75" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date of birth:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5FW-fU-ndr">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="254" width="98" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jb2-U1-TfH">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="45" y="283" width="59" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WSo-nZ-HYS">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="148" width="212" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkA-eZ-9r0">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="145" y="206" width="212" height="30"/>
+                                </variation>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDt-uv-g3L">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="save">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="172" y="422" width="32" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="userProfileSaveButton:" destination="vpk-Po-awL" eventType="touchUpInside" id="8DT-8n-wYz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zeg-GK-cDb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="54" y="148" width="81" height="21"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -297,25 +343,37 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="X75-bL-fs6"/>
-                                <exclude reference="zeg-GK-cDb"/>
                                 <exclude reference="VaU-tS-IKI"/>
+                                <exclude reference="5FW-fU-ndr"/>
+                                <exclude reference="Jb2-U1-TfH"/>
+                                <exclude reference="WSo-nZ-HYS"/>
+                                <exclude reference="CkA-eZ-9r0"/>
+                                <exclude reference="tDt-uv-g3L"/>
+                                <exclude reference="zeg-GK-cDb"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="X75-bL-fs6"/>
-                                <include reference="zeg-GK-cDb"/>
                                 <include reference="VaU-tS-IKI"/>
+                                <include reference="5FW-fU-ndr"/>
+                                <include reference="Jb2-U1-TfH"/>
+                                <include reference="WSo-nZ-HYS"/>
+                                <include reference="CkA-eZ-9r0"/>
+                                <include reference="tDt-uv-g3L"/>
+                                <include reference="zeg-GK-cDb"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
-                        <segue destination="NDW-yB-efI" kind="show" id="w01-Dq-OjG"/>
+                        <outlet property="firstnameEditTextfield" destination="CkA-eZ-9r0" id="bqU-uL-RJ2"/>
+                        <outlet property="usersnameEditTextfield" destination="WSo-nZ-HYS" id="StQ-to-oK2"/>
+                        <segue destination="NDW-yB-efI" kind="show" identifier="profileToTableView" id="w01-Dq-OjG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YkI-kJ-weI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838.5" y="-22"/>
+            <point key="canvasLocation" x="604.5" y="-90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K7T-3G-AkE">
@@ -331,10 +389,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Myd-cx-AGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1519.5" y="-32"/>
+            <point key="canvasLocation" x="1377" y="-348"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="w01-Dq-OjG"/>
+        <segue reference="2s7-EK-b1a"/>
     </inferredMetricsTieBreakers>
 </document>

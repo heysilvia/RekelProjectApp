@@ -33,6 +33,7 @@
 		822F22A11B4C8E2A00946EC1 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822F229B1B4C8E2A00946EC1 /* ParseUI.framework */; };
 		822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A51B4C900800946EC1 /* SignUpViewController.swift */; };
 		822F22A81B4D3E7700946EC1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A71B4D3E7700946EC1 /* SignInViewController.swift */; };
+		822F22AA1B4E59D100946EC1 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		822F22A21B4C8E4700946EC1 /* RekelProjectApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RekelProjectApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		822F22A51B4C900800946EC1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		822F22A71B4D3E7700946EC1 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 				822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */,
 				822F225E1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld */,
 				822F225A1B4C8D1D00946EC1 /* Supporting Files */,
+				822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */,
 			);
 			path = RekelProjectApp;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */,
 				822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */,
 				822F22A81B4D3E7700946EC1 /* SignInViewController.swift in Sources */,
+				822F22AA1B4E59D100946EC1 /* ProfileEditViewController.swift in Sources */,
 				822F22601B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -514,6 +518,7 @@
 				822F227B1B4C8D1D00946EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		822F227C1B4C8D1D00946EC1 /* Build configuration list for PBXNativeTarget "RekelProjectAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				822F227E1B4C8D1D00946EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
