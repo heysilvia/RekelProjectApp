@@ -51,6 +51,10 @@
 		7A2321661B51853900765718 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		7A2321681B51858E00765718 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
 		7A23216A1B518C3C00765718 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7ABA90C31B525F24007518A2 /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		7ABA90C41B525F24007518A2 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		7ABA90C51B525F24007518A2 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		7ABA90C61B525F24007518A2 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
 		822F22571B4C8D1D00946EC1 /* RekelProjectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RekelProjectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822F225B1B4C8D1D00946EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,17 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		7ABA90C71B525F2E007518A2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7ABA90C31B525F24007518A2 /* RobotoSlab-Light.ttf */,
+				7ABA90C41B525F24007518A2 /* SF-UI-Display-Light.otf */,
+				7ABA90C51B525F24007518A2 /* SF-UI-Display-Regular.otf */,
+				7ABA90C61B525F24007518A2 /* SF-UI-Display-Thin.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		822F224E1B4C8D1D00946EC1 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +197,7 @@
 		822F225A1B4C8D1D00946EC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7ABA90C71B525F2E007518A2 /* Fonts */,
 				822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */,
 				822F22A21B4C8E4700946EC1 /* RekelProjectApp-Bridging-Header.h */,
 				822F22661B4C8D1D00946EC1 /* Images.xcassets */,
