@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A2321671B51853900765718 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2321661B51853900765718 /* PageViewController.swift */; };
+		7A2321691B51858E00765718 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2321681B51858E00765718 /* PageContentViewController.swift */; };
+		7A23216B1B518C3C00765718 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A23216A1B518C3C00765718 /* MainViewController.swift */; };
 		822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */; };
 		822F22601B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 822F225E1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld */; };
-		822F22621B4C8D1D00946EC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22611B4C8D1D00946EC1 /* ViewController.swift */; };
 		822F22651B4C8D1D00946EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822F22631B4C8D1D00946EC1 /* Main.storyboard */; };
 		822F22671B4C8D1D00946EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822F22661B4C8D1D00946EC1 /* Images.xcassets */; };
 		822F226A1B4C8D1D00946EC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */; };
@@ -46,11 +48,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A2321661B51853900765718 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		7A2321681B51858E00765718 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		7A23216A1B518C3C00765718 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		822F22571B4C8D1D00946EC1 /* RekelProjectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RekelProjectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822F225B1B4C8D1D00946EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		822F225F1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RekelProjectApp.xcdatamodel; sourceTree = "<group>"; };
-		822F22611B4C8D1D00946EC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		822F22641B4C8D1D00946EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		822F22661B4C8D1D00946EC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		822F22691B4C8D1D00946EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -114,7 +118,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		822F224E1B4C8D1D00946EC1 = {
+		7A2321641B51849900765718 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				822F22951B4C8E2A00946EC1 /* parse-lib */,
@@ -129,6 +133,26 @@
 				822F22831B4C8DBB00946EC1 /* CoreGraphics.framework */,
 				822F22811B4C8DB000946EC1 /* CFNetwork.framework */,
 				822F227F1B4C8DA000946EC1 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A2321651B5184AF00765718 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A2321661B51853900765718 /* PageViewController.swift */,
+				7A2321681B51858E00765718 /* PageContentViewController.swift */,
+				822F22A51B4C900800946EC1 /* SignUpViewController.swift */,
+				822F22A71B4D3E7700946EC1 /* SignInViewController.swift */,
+				7A23216A1B518C3C00765718 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		822F224E1B4C8D1D00946EC1 = {
+			isa = PBXGroup;
+			children = (
+				7A2321641B51849900765718 /* Frameworks */,
 				822F22591B4C8D1D00946EC1 /* RekelProjectApp */,
 				822F22721B4C8D1D00946EC1 /* RekelProjectAppTests */,
 				822F22581B4C8D1D00946EC1 /* Products */,
@@ -147,14 +171,8 @@
 		822F22591B4C8D1D00946EC1 /* RekelProjectApp */ = {
 			isa = PBXGroup;
 			children = (
-				822F22A51B4C900800946EC1 /* SignUpViewController.swift */,
-				822F22A21B4C8E4700946EC1 /* RekelProjectApp-Bridging-Header.h */,
-				822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */,
-				822F22611B4C8D1D00946EC1 /* ViewController.swift */,
+				7A2321651B5184AF00765718 /* Controllers */,
 				822F22631B4C8D1D00946EC1 /* Main.storyboard */,
-				822F22A71B4D3E7700946EC1 /* SignInViewController.swift */,
-				822F22661B4C8D1D00946EC1 /* Images.xcassets */,
-				822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */,
 				822F225E1B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld */,
 				822F225A1B4C8D1D00946EC1 /* Supporting Files */,
 			);
@@ -164,6 +182,10 @@
 		822F225A1B4C8D1D00946EC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */,
+				822F22A21B4C8E4700946EC1 /* RekelProjectApp-Bridging-Header.h */,
+				822F22661B4C8D1D00946EC1 /* Images.xcassets */,
+				822F22681B4C8D1D00946EC1 /* LaunchScreen.xib */,
 				822F225B1B4C8D1D00946EC1 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -299,11 +321,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				822F22621B4C8D1D00946EC1 /* ViewController.swift in Sources */,
 				822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */,
 				822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */,
+				7A2321691B51858E00765718 /* PageContentViewController.swift in Sources */,
+				7A2321671B51853900765718 /* PageViewController.swift in Sources */,
 				822F22A81B4D3E7700946EC1 /* SignInViewController.swift in Sources */,
 				822F22601B4C8D1D00946EC1 /* RekelProjectApp.xcdatamodeld in Sources */,
+				7A23216B1B518C3C00765718 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +538,7 @@
 				822F227B1B4C8D1D00946EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		822F227C1B4C8D1D00946EC1 /* Build configuration list for PBXNativeTarget "RekelProjectAppTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +547,7 @@
 				822F227E1B4C8D1D00946EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

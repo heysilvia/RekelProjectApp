@@ -1,9 +1,163 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0lz-TH-kRg">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RobotoSlab-Light.ttf">
+            <string>RobotoSlab-Light</string>
+            <string>RobotoSlab-Light</string>
+        </mutableArray>
+        <mutableArray key="SF-UI-Display-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="ZMv-Dx-0gc">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0lz-TH-kRg" customClass="PageViewController" customModule="RekelProjectApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="exu-Pn-k4z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-398" y="-472"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="7cW-r9-z5X">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="mdq-0W-5m7" customClass="PageContentViewController" customModule="RekelProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9y3-tl-OMd"/>
+                        <viewControllerLayoutGuide type="bottom" id="xQQ-aS-Wuz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="50i-i9-iUo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Page Content Image Icon 1" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-fA-wji">
+                                <rect key="frame" x="263" y="165" width="75" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="5hR-FK-ADW"/>
+                                    <constraint firstAttribute="width" constant="75" id="JUp-aI-KYh"/>
+                                </constraints>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vUZ-bS-PqK">
+                                <rect key="frame" x="275" y="28" width="50" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="qx6-ux-ju1"/>
+                                    <constraint firstAttribute="width" constant="50" id="uHH-ui-DM2"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subheading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za7-Yj-zLm" userLabel="Subheading">
+                                <rect key="frame" x="262" y="255" width="77" height="17"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="6Vr-vd-6V3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.99607843139999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxV-83-j0L" userLabel="Heading">
+                                <rect key="frame" x="170" y="287" width="260" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ivp-VU-Lo8"/>
+                                    <constraint firstAttribute="width" constant="260" id="YRK-NJ-XaL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="21"/>
+                                <color key="textColor" red="1" green="0.99607843139999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzV-of-qZW" userLabel="Buttons Container">
+                                <rect key="frame" x="160" y="481" width="280" height="54"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkR-58-qHb" userLabel="Register Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="135" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="a6H-Qq-Xvf"/>
+                                            <constraint firstAttribute="width" constant="135" id="rZR-jZ-toH"/>
+                                        </constraints>
+                                        <state key="normal" image="Page Content Register Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="registerVCSegue" id="7Lo-O4-oal"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qj-8a-Weh" userLabel="Sign In Button">
+                                        <rect key="frame" x="145" y="0.0" width="135" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="135" id="6ec-2o-4yY"/>
+                                            <constraint firstAttribute="height" constant="54" id="mqH-SM-Cpg"/>
+                                        </constraints>
+                                        <state key="normal" image="Page Content Sign In Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="eHB-nL-KJW" kind="show" identifier="signInSegue" id="9pC-xk-Ptc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="5ED-9d-RTk"/>
+                                    <constraint firstAttribute="bottom" secondItem="wkR-58-qHb" secondAttribute="bottom" id="5pa-ep-kbe"/>
+                                    <constraint firstItem="8qj-8a-Weh" firstAttribute="top" secondItem="jzV-of-qZW" secondAttribute="top" id="62h-Pg-jXa"/>
+                                    <constraint firstItem="wkR-58-qHb" firstAttribute="top" secondItem="jzV-of-qZW" secondAttribute="top" id="7sB-NF-nna"/>
+                                    <constraint firstAttribute="trailing" secondItem="8qj-8a-Weh" secondAttribute="trailing" id="KOp-mC-gth"/>
+                                    <constraint firstAttribute="width" constant="280" id="SSe-B6-DGe"/>
+                                    <constraint firstItem="wkR-58-qHb" firstAttribute="leading" secondItem="jzV-of-qZW" secondAttribute="leading" id="Y1W-qA-S3f"/>
+                                    <constraint firstAttribute="bottom" secondItem="8qj-8a-Weh" secondAttribute="bottom" id="YbD-yA-i4a"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJj-yS-JWp">
+                                <rect key="frame" x="258" y="550" width="84" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="84" id="4YH-fc-NfU"/>
+                                    <constraint firstAttribute="height" constant="30" id="EbR-zZ-UCU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                <state key="normal" title="Just browse">
+                                    <color key="titleColor" red="0.52754485610000001" green="0.43927761910000002" blue="0.41339793800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="mdq-0W-5m7" eventType="touchUpInside" id="khr-Jn-Fkg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33949655290000003" green="0.23527306319999999" blue="0.20484012369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vUZ-bS-PqK" secondAttribute="centerX" id="44X-UM-nyq"/>
+                            <constraint firstItem="Y2r-fA-wji" firstAttribute="top" secondItem="vUZ-bS-PqK" secondAttribute="bottom" constant="100" id="F3O-13-HCI"/>
+                            <constraint firstAttribute="centerX" secondItem="jzV-of-qZW" secondAttribute="centerX" id="HAO-dW-SZI"/>
+                            <constraint firstAttribute="centerX" secondItem="Y2r-fA-wji" secondAttribute="centerX" id="Iwt-Ds-f8s"/>
+                            <constraint firstAttribute="centerX" secondItem="vxV-83-j0L" secondAttribute="centerX" id="Jdx-E3-E8u"/>
+                            <constraint firstAttribute="centerX" secondItem="Za7-Yj-zLm" secondAttribute="centerX" id="RYX-LA-SJq"/>
+                            <constraint firstAttribute="centerX" secondItem="rJj-yS-JWp" secondAttribute="centerX" id="Sr0-Oz-wgU"/>
+                            <constraint firstItem="Za7-Yj-zLm" firstAttribute="top" secondItem="Y2r-fA-wji" secondAttribute="bottom" constant="15" id="XWL-ac-fcB"/>
+                            <constraint firstItem="rJj-yS-JWp" firstAttribute="top" secondItem="jzV-of-qZW" secondAttribute="bottom" constant="15" id="aGH-tf-oRp"/>
+                            <constraint firstItem="vUZ-bS-PqK" firstAttribute="top" secondItem="9y3-tl-OMd" secondAttribute="bottom" constant="8" id="qKc-p1-DLd"/>
+                            <constraint firstItem="xQQ-aS-Wuz" firstAttribute="top" secondItem="rJj-yS-JWp" secondAttribute="bottom" constant="20" id="rpu-qH-yFg"/>
+                            <constraint firstItem="vxV-83-j0L" firstAttribute="top" secondItem="Za7-Yj-zLm" secondAttribute="bottom" constant="15" id="uAK-Uh-SrZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentImageView" destination="Y2r-fA-wji" id="8ev-Qh-my9"/>
+                        <outlet property="headingLabel" destination="vxV-83-j0L" id="AWT-US-a1F"/>
+                        <outlet property="justBrowseButton" destination="rJj-yS-JWp" id="Qos-5W-czz"/>
+                        <outlet property="pageControl" destination="vUZ-bS-PqK" id="pvr-et-Xng"/>
+                        <outlet property="registerButton" destination="wkR-58-qHb" id="42C-B1-1xa"/>
+                        <outlet property="signInButton" destination="8qj-8a-Weh" id="0nD-cg-IxQ"/>
+                        <outlet property="subHeadingLabel" destination="Za7-Yj-zLm" id="Qqt-Yc-JSJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k93-kX-M8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="-472"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -115,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199.5" y="289"/>
+            <point key="canvasLocation" x="116" y="262"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="9GE-Ji-ziz">
@@ -203,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="smO-Sm-cGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="88.5" y="1056"/>
+            <point key="canvasLocation" x="224" y="892"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="Azc-0c-bE9">
@@ -233,7 +387,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hn9-Re-vQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1906.5" y="364"/>
+            <point key="canvasLocation" x="1998" y="819"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kS4-21-OCc">
@@ -251,12 +405,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lfy-np-qDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2586" y="364"/>
+            <point key="canvasLocation" x="2645" y="819"/>
         </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="335-Y2-FO8">
             <objects>
-                <viewController id="vpk-Po-awL" sceneMemberID="viewController">
+                <viewController id="vpk-Po-awL" customClass="MainViewController" customModule="RekelProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eWK-aZ-Chb"/>
                         <viewControllerLayoutGuide type="bottom" id="6Za-AX-yXp"/>
@@ -315,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YkI-kJ-weI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="838.5" y="-22"/>
+            <point key="canvasLocation" x="866" y="-11"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="K7T-3G-AkE">
@@ -334,7 +488,13 @@
             <point key="canvasLocation" x="1519.5" y="-32"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Page Content Image Icon 1" width="76" height="76"/>
+        <image name="Page Content Register Button" width="135" height="54"/>
+        <image name="Page Content Sign In Button" width="135" height="54"/>
+    </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="9pC-xk-Ptc"/>
         <segue reference="w01-Dq-OjG"/>
     </inferredMetricsTieBreakers>
 </document>

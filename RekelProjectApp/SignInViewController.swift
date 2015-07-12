@@ -10,15 +10,10 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
-    
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var emailTextField: UITextField!
-
     @IBOutlet weak var passwordTextField: UITextField!
-    
-    
     @IBOutlet weak var message: UILabel!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

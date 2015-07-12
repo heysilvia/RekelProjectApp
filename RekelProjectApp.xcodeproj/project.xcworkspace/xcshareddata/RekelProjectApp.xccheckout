@@ -11,7 +11,7 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>90501E94A697A37A8796567BFB04FD64789140E9</key>
-		<string>https://github.com/sbor85/RekelProjectApp.git</string>
+		<string>https://github.com/OptTrader/RekelProjectApp.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>RekelProjectApp.xcodeproj</string>
@@ -21,7 +21,7 @@
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/sbor85/RekelProjectApp.git</string>
+	<string>https://github.com/OptTrader/RekelProjectApp.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
