@@ -38,6 +38,7 @@
 		822F22B01B4EC3A600946EC1 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */; };
 		822F22B21B4ECCCF00946EC1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822F22B11B4ECCCF00946EC1 /* FBSDKCoreKit.framework */; };
 		822F22B41B4ECE0C00946EC1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822F22B31B4ECE0C00946EC1 /* FBSDKLoginKit.framework */; };
+		822F22B61B4FEFB300946EC1 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22B51B4FEFB300946EC1 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
 		822F22B11B4ECCCF00946EC1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		822F22B31B4ECE0C00946EC1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		822F22B51B4FEFB300946EC1 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 				822F225C1B4C8D1D00946EC1 /* AppDelegate.swift */,
 				822F22611B4C8D1D00946EC1 /* ViewController.swift */,
 				822F22631B4C8D1D00946EC1 /* Main.storyboard */,
+				822F22B51B4FEFB300946EC1 /* ItemCell.swift */,
 				822F22AF1B4EC3A600946EC1 /* ItemsTableViewController.swift */,
 				822F22A71B4D3E7700946EC1 /* SignInViewController.swift */,
 				822F22A91B4E59D100946EC1 /* ProfileEditViewController.swift */,
@@ -318,6 +321,7 @@
 			files = (
 				822F22621B4C8D1D00946EC1 /* ViewController.swift in Sources */,
 				822F22AE1B4EC1B300946EC1 /* TableViewController.swift in Sources */,
+				822F22B61B4FEFB300946EC1 /* ItemCell.swift in Sources */,
 				822F22B01B4EC3A600946EC1 /* ItemsTableViewController.swift in Sources */,
 				822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */,
 				822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */,

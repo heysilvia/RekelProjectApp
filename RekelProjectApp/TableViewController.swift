@@ -36,7 +36,7 @@ class TableViewController: PFQueryTableViewController {
     }
     
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell {
+  /*  override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! PFTableViewCell!
         if cell == nil {
@@ -49,6 +49,33 @@ class TableViewController: PFQueryTableViewController {
         }
         if let itemName = object?["name"] as? String {
             cell?.detailTextLabel?.text = itemName
+        }
+        
+        return cell
+    }*/
+    
+    //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject?) -> PFTableViewCell {
+        
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as! ItemCell!
+        if cell == nil {
+            cell = ItemCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+        }
+        
+        // Extract values from the PFObject to display in the table cell
+        if let itemType = object?["item"] as? String {
+            cell.itemType.text = itemType
+        }
+        if let itemName = object?["name"] as? String {
+            cell.itemName.text = itemName
+        }
+        
+        // Display flag image
+        var initialThumbnail = UIImage(named: "placeholder")
+        cell.itemImage.image = initialThumbnail
+        if let thumbnail = object?["imageFile"] as? PFFile {
+            cell.itemImage.file = thumbnail
+            cell.itemImage.loadInBackground()
         }
         
         return cell

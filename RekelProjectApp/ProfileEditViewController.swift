@@ -8,11 +8,13 @@
 
 import UIKit
 
+
+
 class ProfileEditViewController: UIViewController {
+     // Container to store the current user
+     var currentUser : PFUser?
     
-    
-    // Container to store the current user
-    var currentUser : PFUser?
+
     
     
     @IBOutlet weak var usersnameEditTextfield: UITextField!
@@ -28,6 +30,10 @@ class ProfileEditViewController: UIViewController {
         if let object = currentUser {
             usersnameEditTextfield.text = object["usersname"] as! String
             firstnameEditTextfield.text = object["firstname"] as! String
+            
+            NSLog("current user", currentUser!)
+            
+            
            
         }
         
@@ -54,8 +60,17 @@ class ProfileEditViewController: UIViewController {
             // Save the data back to the server in a background task
           //object.saveEventually(nil)
             
-          object.saveEventually()
-        object.ACL = PFACL(user: PFUser.currentUser()!)
+            object.saveInBackgroundWithBlock {
+                (success: Bool, error: NSError?) -> Void in
+                if (success) {
+                   NSLog("user created")
+                } else {
+                    // There was a problem, check error.description
+                    
+                    println(error)
+                }
+            }
+       // object.ACL = PFACL(user: PFUser.currentUser()!)
             
             
             //perform segue to tableview
