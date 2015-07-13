@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t3g-Ds-lr2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -209,9 +210,9 @@
         <!--Items Table View Controller-->
         <scene sceneID="Yvx-CT-63z">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="INF-XJ-Y55" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="zcJ-Zh-bme" customClass="ItemsTableViewController" customModule="RekelProjectApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="qp5-Z3-Nzz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -249,8 +250,7 @@
                                                     <exclude reference="pRH-uN-GaH"/>
                                                 </mask>
                                             </variation>
-                                            <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="41" y="215" width="42" height="21"/>
+                                            <variation key="widthClass=compact">
                                                 <mask key="constraints">
                                                     <include reference="pRH-uN-GaH"/>
                                                 </mask>
@@ -261,9 +261,6 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
-                                            <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="41" y="244" width="42" height="21"/>
-                                            </variation>
                                         </label>
                                     </subviews>
                                     <constraints>
@@ -282,13 +279,13 @@
                                             <exclude reference="Uu5-1b-4Yg"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <exclude reference="GuN-io-4M0"/>
-                                            <exclude reference="TUJ-A4-NYZ"/>
-                                            <exclude reference="wB2-3f-BUf"/>
                                             <exclude reference="EFl-FZ-94v"/>
                                             <exclude reference="qUQ-N0-hOO"/>
                                             <exclude reference="vYZ-Bb-c4X"/>
                                             <exclude reference="uPT-bg-h3R"/>
+                                            <exclude reference="GuN-io-4M0"/>
+                                            <exclude reference="TUJ-A4-NYZ"/>
+                                            <exclude reference="wB2-3f-BUf"/>
                                         </mask>
                                     </variation>
                                     <variation key="widthClass=compact">
@@ -298,13 +295,13 @@
                                             <include reference="Uu5-1b-4Yg"/>
                                         </mask>
                                         <mask key="constraints">
-                                            <include reference="GuN-io-4M0"/>
-                                            <include reference="TUJ-A4-NYZ"/>
-                                            <include reference="wB2-3f-BUf"/>
                                             <include reference="EFl-FZ-94v"/>
                                             <include reference="qUQ-N0-hOO"/>
                                             <include reference="vYZ-Bb-c4X"/>
                                             <include reference="uPT-bg-h3R"/>
+                                            <include reference="GuN-io-4M0"/>
+                                            <include reference="TUJ-A4-NYZ"/>
+                                            <include reference="wB2-3f-BUf"/>
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
@@ -323,6 +320,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="b5J-l9-Sp8"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="INF-XJ-Y55" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1326" y="-923"/>
         </scene>
@@ -335,6 +333,7 @@
                         <viewControllerLayoutGuide type="bottom" id="yiw-gC-FPk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="857-VB-8iv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -486,7 +485,6 @@
         <!--Navigation Controller-->
         <scene sceneID="ox3-QX-509">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LLi-ps-0Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t3g-Ds-lr2" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Bt6-47-lR3">
@@ -498,6 +496,7 @@
                         <segue destination="zcJ-Zh-bme" kind="relationship" relationship="rootViewController" id="C6c-54-G0R"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLi-ps-0Sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="594" y="-748"/>
         </scene>
