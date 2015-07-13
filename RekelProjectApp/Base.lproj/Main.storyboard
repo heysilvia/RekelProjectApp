@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0lz-TH-kRg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wcq-U6-tDH">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="RobotoSlab-Light.ttf">
@@ -61,7 +63,7 @@
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </pageControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="subheading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za7-Yj-zLm" userLabel="Subheading">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="subheading" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Za7-Yj-zLm" userLabel="Subheading">
                                 <rect key="frame" x="262" y="255" width="77" height="19"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -70,8 +72,11 @@
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="14"/>
                                 <color key="textColor" red="1" green="0.99607843139999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="162" y="255" width="77" height="16.5"/>
+                                </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HEADING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxV-83-j0L" userLabel="Heading">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HEADING" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vxV-83-j0L" userLabel="Heading">
                                 <rect key="frame" x="170" y="289" width="260" height="80"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -81,6 +86,9 @@
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="21"/>
                                 <color key="textColor" red="1" green="0.99607843139999996" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="70" y="286" width="260" height="80"/>
+                                </variation>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzV-of-qZW" userLabel="Buttons Container">
                                 <rect key="frame" x="160" y="481" width="280" height="54"/>
@@ -675,54 +683,6 @@ for vintage kids clothes</string>
             </objects>
             <point key="canvasLocation" x="224" y="892"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Azc-0c-bE9">
-            <objects>
-                <tableViewController id="4dH-SB-IDo" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="x0F-c0-FCH">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Egx-6a-b54">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Egx-6a-b54" id="fd7-LR-v9v">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="msq-fl-g7h" kind="show" id="i22-Sk-dZs"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="4dH-SB-IDo" id="kWm-d8-vmV"/>
-                            <outlet property="delegate" destination="4dH-SB-IDo" id="vfZ-AK-b9h"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="mXs-gb-Oo8"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hn9-Re-vQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1998" y="819"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="kS4-21-OCc">
-            <objects>
-                <viewController id="msq-fl-g7h" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VmJ-oV-idB"/>
-                        <viewControllerLayoutGuide type="bottom" id="Yf8-UE-HCX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="skr-jf-JQ6">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lfy-np-qDK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2645" y="819"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="335-Y2-FO8">
             <objects>
@@ -795,9 +755,6 @@ for vintage kids clothes</string>
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="4dH-SB-IDo" kind="relationship" relationship="rootViewController" id="XfP-MB-p86"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Myd-cx-AGh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="sjO-fZ-TBR" userLabel="View Container">
@@ -849,7 +806,164 @@ for vintage kids clothes</string>
                     </constraints>
                 </view>
             </objects>
-            <point key="canvasLocation" x="1519.5" y="-32"/>
+            <point key="canvasLocation" x="1924.5" y="-94"/>
+        </scene>
+        <!--Items Table View Controller-->
+        <scene sceneID="KWz-78-9f6">
+            <objects>
+                <tableViewController id="Xfn-Xy-z8R" customClass="ItemsTableViewController" customModule="RekelProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" id="X5h-GA-jOX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="100" id="IGu-9u-K8i" customClass="CustomCell" customModule="RekelProjectApp" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IGu-9u-K8i" id="w1g-Fb-FBP">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CQj-93-izf" customClass="PFImageView">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="Feb-aI-vip"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Feb-aI-vip"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="Feb-aI-vip"/>
+                                                </mask>
+                                            </variation>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaJ-O7-5yz">
+                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="122" y="21" width="264" height="21"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="CQj-93-izf" secondAttribute="bottom" constant="-8.5" id="IwO-CO-EBt"/>
+                                        <constraint firstItem="CQj-93-izf" firstAttribute="leading" secondItem="w1g-Fb-FBP" secondAttribute="leading" id="XCf-GI-sqa"/>
+                                        <constraint firstItem="CQj-93-izf" firstAttribute="top" secondItem="w1g-Fb-FBP" secondAttribute="top" id="dH0-3K-ob1"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="CQj-93-izf"/>
+                                            <exclude reference="YaJ-O7-5yz"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <exclude reference="IwO-CO-EBt"/>
+                                            <exclude reference="XCf-GI-sqa"/>
+                                            <exclude reference="dH0-3K-ob1"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="CQj-93-izf"/>
+                                            <include reference="YaJ-O7-5yz"/>
+                                        </mask>
+                                        <mask key="constraints">
+                                            <include reference="IwO-CO-EBt"/>
+                                            <include reference="XCf-GI-sqa"/>
+                                            <include reference="dH0-3K-ob1"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="customImage" destination="CQj-93-izf" id="2pU-fB-2G6"/>
+                                    <outlet property="customName" destination="YaJ-O7-5yz" id="BeG-0x-fod"/>
+                                    <segue destination="GLb-e1-ftw" kind="show" identifier="showDetailView" id="8aK-oL-RZc"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Xfn-Xy-z8R" id="xmO-57-eRK"/>
+                            <outlet property="delegate" destination="Xfn-Xy-z8R" id="1mq-ef-8Kj"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="NLr-wl-bJr"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YeI-ri-gKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3609" y="-135"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="XNa-0d-YVZ">
+            <objects>
+                <viewController id="GLb-e1-ftw" customClass="DetailViewController" customModule="RekelProjectApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uuR-ZN-2Uj"/>
+                        <viewControllerLayoutGuide type="bottom" id="e3o-ZV-OQo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZCR-fP-mVp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjR-8u-jt2">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="30" y="95" width="51" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Abc-Ku-FKk">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="94" y="95" width="246" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FjR-8u-jt2"/>
+                                <exclude reference="Abc-Ku-FKk"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FjR-8u-jt2"/>
+                                <include reference="Abc-Ku-FKk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="labelName" destination="Abc-Ku-FKk" id="x0X-1V-GjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B3Y-dF-rgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4305" y="-135"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5RJ-PH-VBD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wcq-U6-tDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aiy-OY-9YI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xfn-Xy-z8R" kind="relationship" relationship="rootViewController" id="ri1-Vg-cKX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yH2-Oa-xCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2691" y="-135"/>
         </scene>
     </scenes>
     <resources>
@@ -865,6 +979,6 @@ for vintage kids clothes</string>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3oV-Hk-yhp"/>
-        <segue reference="w01-Dq-OjG"/>
+        <segue reference="2s7-EK-b1a"/>
     </inferredMetricsTieBreakers>
 </document>

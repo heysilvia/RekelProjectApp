@@ -35,6 +35,9 @@
 		822F22A11B4C8E2A00946EC1 /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822F229B1B4C8E2A00946EC1 /* ParseUI.framework */; };
 		822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A51B4C900800946EC1 /* SignUpViewController.swift */; };
 		822F22A81B4D3E7700946EC1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822F22A71B4D3E7700946EC1 /* SignInViewController.swift */; };
+		8267509E1B5462C100F70FD5 /* ItemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267509D1B5462C100F70FD5 /* ItemsTableViewController.swift */; };
+		826750A01B54663800F70FD5 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8267509F1B54663800F70FD5 /* DetailViewController.swift */; };
+		826750A21B5467F600F70FD5 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826750A11B5467F600F70FD5 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +88,9 @@
 		822F22A21B4C8E4700946EC1 /* RekelProjectApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RekelProjectApp-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		822F22A51B4C900800946EC1 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = ../SignUpViewController.swift; sourceTree = "<group>"; };
 		822F22A71B4D3E7700946EC1 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		8267509D1B5462C100F70FD5 /* ItemsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemsTableViewController.swift; sourceTree = "<group>"; };
+		8267509F1B54663800F70FD5 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		826750A11B5467F600F70FD5 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,9 @@
 				822F22A51B4C900800946EC1 /* SignUpViewController.swift */,
 				822F22A71B4D3E7700946EC1 /* SignInViewController.swift */,
 				7A23216A1B518C3C00765718 /* MainViewController.swift */,
+				8267509D1B5462C100F70FD5 /* ItemsTableViewController.swift */,
+				8267509F1B54663800F70FD5 /* DetailViewController.swift */,
+				826750A11B5467F600F70FD5 /* CustomCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -337,8 +346,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826750A01B54663800F70FD5 /* DetailViewController.swift in Sources */,
 				822F225D1B4C8D1D00946EC1 /* AppDelegate.swift in Sources */,
+				826750A21B5467F600F70FD5 /* CustomCell.swift in Sources */,
 				822F22A61B4C900800946EC1 /* SignUpViewController.swift in Sources */,
+				8267509E1B5462C100F70FD5 /* ItemsTableViewController.swift in Sources */,
 				7A2321691B51858E00765718 /* PageContentViewController.swift in Sources */,
 				7A2321671B51853900765718 /* PageViewController.swift in Sources */,
 				822F22A81B4D3E7700946EC1 /* SignInViewController.swift in Sources */,
